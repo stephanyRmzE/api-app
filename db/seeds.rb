@@ -5,3 +5,11 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+puts 'Cleaning database'
+Car.destroy_all
+car_one = Car.create(seats: 4)
+car_two = Car.create(seats: 5)
+car_three = Car.create(seats: 6)
+car_four = Car.create(seats: 4)
+car_five = Car.create(seats: 5)
+car_six = Car.create(seats: 6)
